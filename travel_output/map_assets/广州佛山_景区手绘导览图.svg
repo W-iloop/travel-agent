@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <filter id="rough-edge"><feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="2"/></filter>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#a8d8ea"/><stop offset="50%" stop-color="#7ec8e3"/><stop offset="100%" stop-color="#a8d8ea"/></linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#f5e6c8"/><stop offset="100%" stop-color="#e8d5a8"/></linearGradient>
+  </defs>
+
+  <!-- 暖浅黄色哑光底色 -->
+  <rect width="1200" height="900" fill="#FBF5E8" rx="12"/>
+
+  <!-- 北方针叶林 -->
+  <g fill="#8FBC8F" opacity="0.6">
+    <polygon points="100,80 110,50 120,80"/><polygon points="200,70 210,40 220,70"/>
+    <polygon points="350,60 360,30 370,60"/><polygon points="500,55 510,25 520,55"/>
+    <polygon points="650,60 660,30 670,60"/><polygon points="800,65 810,35 820,65"/>
+    <polygon points="950,70 960,40 970,70"/><polygon points="1050,75 1060,45 1070,75"/>
+  </g>
+
+  <!-- 云朵 -->
+  <g fill="white" opacity="0.8" stroke="#ddd" stroke-width="1">
+    <ellipse cx="180" cy="120" rx="45" ry="20"/><ellipse cx="210" cy="110" rx="35" ry="18"/><ellipse cx="150" cy="115" rx="30" ry="15"/>
+    <ellipse cx="750" cy="100" rx="40" ry="18"/><ellipse cx="780" cy="90" rx="30" ry="15"/><ellipse cx="720" cy="95" rx="28" ry="14"/>
+    <ellipse cx="980" cy="140" rx="50" ry="22"/><ellipse cx="1010" cy="128" rx="38" ry="18"/><ellipse cx="950" cy="132" rx="32" ry="16"/>
+  </g>
+
+  <!-- 浅绿丘陵 -->
+  <g fill="#C8E6C9" opacity="0.5">
+    <ellipse cx="300" cy="780" rx="180" ry="60"/>
+    <ellipse cx="700" cy="800" rx="200" ry="50"/>
+    <ellipse cx="1000" cy="770" rx="150" ry="55"/>
+  </g>
+
+  <!-- 蓝色河道 - 珠江 -->
+  <path d="M 0 350 Q 100 340 200 360 Q 350 380 500 350 Q 600 330 700 360 Q 800 380 900 350 Q 1000 330 1200 360" fill="none" stroke="url(#water)" stroke-width="28" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 0 350 Q 100 340 200 360 Q 350 380 500 350 Q 600 330 700 360 Q 800 380 900 350 Q 1000 330 1200 360" fill="none" stroke="#5BA4CF" stroke-width="2" stroke-dasharray="8,4" opacity="0.4"/>
+  <!-- 河道支流 -->
+  <path d="M 500 350 Q 520 420 540 480 Q 560 530 580 600" fill="none" stroke="url(#water)" stroke-width="14" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 200 360 Q 220 440 240 520" fill="none" stroke="url(#water)" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- 暖黄色主游览公路 -->
+  <path d="M 150 450 Q 250 440 350 430 Q 450 420 520 400 Q 580 380 620 350 Q 660 320 700 340 Q 750 360 800 380 Q 860 400 920 420 Q 980 440 1050 430" fill="none" stroke="#F0D78C" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 150 450 Q 250 440 350 430 Q 450 420 520 400 Q 580 380 620 350 Q 660 320 700 340 Q 750 360 800 380 Q 860 400 920 420 Q 980 440 1050 430" fill="none" stroke="#D4A017" stroke-width="1.5" stroke-dasharray="10,6" opacity="0.5"/>
+  <!-- 佛山方向公路 -->
+  <path d="M 520 400 Q 500 460 480 500 Q 460 530 440 560" fill="none" stroke="#F0D78C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M 700 340 Q 680 400 660 440 Q 640 480 620 520" fill="none" stroke="#F0D78C" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- 棕色铁轨（广佛地铁） -->
+  <path d="M 100 500 L 250 470 L 400 440 L 480 520 L 440 560 L 350 590" fill="none" stroke="#C4A882" stroke-width="5" stroke-dasharray="14,6" stroke-linecap="round"/>
+  <path d="M 100 500 L 250 470 L 400 440 L 480 520 L 440 560 L 350 590" fill="none" stroke="#8B7355" stroke-width="1.5" stroke-dasharray="4,16"/>
+
+  <!-- 卡通小树 -->
+  <g>
+    <circle cx="130" cy="560" r="14" fill="#7CB342"/><rect x="127" y="574" width="6" height="16" fill="#8D6E63" rx="1"/>
+    <circle cx="280" cy="510" r="12" fill="#66BB6A"/><rect x="277" y="522" width="6" height="14" fill="#8D6E63" rx="1"/>
+    <circle cx="850" cy="450" r="16" fill="#7CB342"/><rect x="847" y="466" width="6" height="18" fill="#8D6E63" rx="1"/>
+    <circle cx="950" cy="480" r="13" fill="#66BB6A"/><rect x="947" y="493" width="6" height="15" fill="#8D6E63" rx="1"/>
+    <circle cx="600" cy="620" r="15" fill="#81C784"/><rect x="597" y="635" width="6" height="17" fill="#8D6E63" rx="1"/>
+    <circle cx="160" cy="650" r="11" fill="#7CB342"/><rect x="157" y="661" width="6" height="13" fill="#8D6E63" rx="1"/>
+  </g>
+
+  <!-- ===== 广州长隆欢乐世界（红色打卡点） ===== -->
+  <g transform="translate(380, 280)">
+    <!-- 游乐园建筑群 -->
+    <rect x="0" y="0" width="80" height="60" fill="#FFE0B2" stroke="#FF8A65" stroke-width="2" rx="4"/>
+    <rect x="5" y="5" width="30" height="25" fill="#FFCC80" stroke="#FF8A65" stroke-width="1.5" rx="3"/>
+    <rect x="40" y="5" width="35" height="20" fill="#FFE0B2" stroke="#FF8A65" stroke-width="1.5" rx="3"/>
+    <!-- 过山车轨道 -->
+    <path d="M 10 30 Q 30 15 50 30 Q 65 40 75 30" fill="none" stroke="#E57373" stroke-width="2.5"/>
+    <!-- 摩天轮 -->
+    <circle cx="65" cy="15" r="12" fill="none" stroke="#FF8A65" stroke-width="2"/>
+    <line x1="65" y1="3" x2="65" y2="27" stroke="#FF8A65" stroke-width="1"/>
+    <line x1="53" y1="15" x2="77" y2="15" stroke="#FF8A65" stroke-width="1"/>
+    <!-- 红色水滴定位 -->
+    <path d="M 25 -10 Q 25 -25 35 -25 Q 45 -25 45 -10 L 35 2 Z" fill="#E53935" opacity="0.9"/>
+    <text x="35" y="-18" text-anchor="middle" fill="white" font-size="9" font-weight="bold">1</text>
+  </g>
+  <text x="420" y="360" text-anchor="middle" font-size="15" font-weight="bold" fill="#333" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">广州长隆欢乐世界</text>
+  <text x="420" y="378" text-anchor="middle" font-size="11" fill="#777" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">5A景区·70+游乐项目</text>
+
+  <!-- ===== 佛山祖庙（橙色打卡点） ===== -->
+  <g transform="translate(400, 520)">
+    <!-- 中式飞檐古建 -->
+    <rect x="0" y="15" width="75" height="45" fill="#FFE0B2" stroke="#FFB74D" stroke-width="2" rx="3"/>
+    <path d="M -8 15 L 37 -5 L 83 15" fill="#FFCC80" stroke="#FFB74D" stroke-width="2"/>
+    <path d="M -5 10 L 37 -8 L 80 10" fill="#FFE0B2" stroke="#FFB74D" stroke-width="1.5"/>
+    <!-- 门 -->
+    <rect x="25" y="30" width="25" height="30" fill="#8D6E63" rx="2"/>
+    <line x1="37" y1="30" x2="37" y2="60" stroke="#6D4C41" stroke-width="1"/>
+    <!-- 醒狮小图标 -->
+    <circle cx="55" cy="45" r="6" fill="#FF8A65"/>
+    <line x1="55" y1="39" x2="55" y2="51" stroke="#E65100" stroke-width="1"/>
+    <line x1="49" y1="45" x2="61" y2="45" stroke="#E65100" stroke-width="1"/>
+    <!-- 橙色水滴定位 -->
+    <path d="M 25 -12 Q 25 -27 35 -27 Q 45 -27 45 -12 L 35 0 Z" fill="#FF8F00" opacity="0.9"/>
+    <text x="35" y="-20" text-anchor="middle" fill="white" font-size="9" font-weight="bold">2</text>
+  </g>
+  <text x="440" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#333" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">佛山祖庙</text>
+  <text x="440" y="618" text-anchor="middle" font-size="11" fill="#777" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">千年古建·醒狮表演</text>
+
+  <!-- ===== 沙湾古镇（蓝色打卡点） ===== -->
+  <g transform="translate(180, 620)">
+    <!-- 古镇建筑 -->
+    <rect x="0" y="10" width="55" height="40" fill="#E3F2FD" stroke="#64B5F6" stroke-width="2" rx="3"/>
+    <path d="M -5 10 L 27 -5 L 60 10" fill="#BBDEFB" stroke="#64B5F6" stroke-width="2"/>
+    <rect x="15" y="25" width="12" height="25" fill="#90CAF9" rx="2"/>
+    <rect x="32" y="28" width="14" height="22" fill="#BBDEFB" rx="2"/>
+    <!-- 蓝色水滴定位 -->
+    <path d="M 15 -8 Q 15 -23 25 -23 Q 35 -23 35 -8 L 25 4 Z" fill="#1E88E5" opacity="0.9"/>
+    <text x="25" y="-16" text-anchor="middle" fill="white" font-size="9" font-weight="bold">3</text>
+  </g>
+  <text x="210" y="680" text-anchor="middle" font-size="15" font-weight="bold" fill="#333" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">沙湾古镇</text>
+  <text x="210" y="698" text-anchor="middle" font-size="11" fill="#777" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">800年岭南古镇</text>
+
+  <!-- ===== 广州早茶美食（绿色打卡点） ===== -->
+  <g transform="translate(620, 440)">
+    <!-- 茶楼建筑 -->
+    <rect x="0" y="10" width="60" height="40" fill="#E8F5E9" stroke="#81C784" stroke-width="2" rx="3"/>
+    <path d="M -5 10 L 30 -5 L 65 10" fill="#C8E6C9" stroke="#81C784" stroke-width="2"/>
+    <rect x="10" y="22" width="15" height="28" fill="#A5D6A7" rx="2"/>
+    <circle cx="45" cy="35" r="8" fill="#66BB6A" opacity="0.5"/>
+    <!-- 绿色水滴定位 -->
+    <path d="M 20 -8 Q 20 -23 30 -23 Q 40 -23 40 -8 L 30 4 Z" fill="#43A047" opacity="0.9"/>
+    <text x="30" y="-16" text-anchor="middle" fill="white" font-size="9" font-weight="bold">4</text>
+  </g>
+  <text x="650" y="500" text-anchor="middle" font-size="15" font-weight="bold" fill="#333" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">广府美食区</text>
+  <text x="650" y="518" text-anchor="middle" font-size="11" fill="#777" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">早茶·双皮奶·白切鸡</text>
+
+  <!-- ===== 岭南天地+陈家祠（蓝色打卡点） ===== -->
+  <g transform="translate(320, 560)">
+    <rect x="0" y="5" width="50" height="35" fill="#E3F2FD" stroke="#64B5F6" stroke-width="2" rx="3"/>
+    <path d="M -4 5 L 25 -8 L 54 5" fill="#BBDEFB" stroke="#64B5F6" stroke-width="1.5"/>
+    <!-- 蓝色水滴定位 -->
+    <path d="M 15 -6 Q 15 -20 25 -20 Q 35 -20 35 -6 L 25 6 Z" fill="#1E88E5" opacity="0.9"/>
+    <text x="25" y="-14" text-anchor="middle" fill="white" font-size="8" font-weight="bold">5</text>
+  </g>
+  <text x="345" y="615" text-anchor="middle" font-size="13" font-weight="bold" fill="#333" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">岭南天地</text>
+  <text x="345" y="630" text-anchor="middle" font-size="10" fill="#777" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">骑楼老街</text>
+
+  <!-- ===== 广州南站（交通枢纽） ===== -->
+  <g transform="translate(100, 470)">
+    <rect x="0" y="0" width="65" height="30" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2" rx="4"/>
+    <text x="32" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">广州南站</text>
+    <!-- 火车图标 -->
+    <rect x="10" y="11" width="8" height="5" fill="#FF8A65" rx="1"/>
+    <rect x="48" y="11" width="8" height="5" fill="#FF8A65" rx="1"/>
+  </g>
+
+  <!-- ===== 右上角：标题+指南针 ===== -->
+  <g transform="translate(850, 50)">
+    <!-- 标题框 -->
+    <rect x="0" y="0" width="280" height="90" fill="white" fill-opacity="0.85" stroke="#D4A017" stroke-width="2" rx="8"/>
+    <text x="140" y="32" text-anchor="middle" font-size="24" font-weight="900" fill="#C0392B" font-family="Noto Serif SC,serif">手绘地图</text>
+    <text x="140" y="54" text-anchor="middle" font-size="11" fill="#999" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" letter-spacing="4">HAND-DRAWN MAP</text>
+    <line x1="30" y1="62" x2="250" y2="62" stroke="#D4A017" stroke-width="0.5"/>
+
+    <!-- 指南针 -->
+    <circle cx="140" cy="120" r="38" fill="white" fill-opacity="0.9" stroke="#D4A017" stroke-width="2"/>
+    <circle cx="140" cy="120" r="32" fill="none" stroke="#E8D5A8" stroke-width="1"/>
+    <!-- N -->
+    <polygon points="140,85 133,105 147,105" fill="#C0392B"/>
+    <text x="140" y="82" text-anchor="middle" font-size="14" font-weight="900" fill="#C0392B" font-family="Noto Serif SC,serif">N</text>
+    <!-- S -->
+    <polygon points="140,155 133,135 147,135" fill="#999"/>
+    <text x="140" y="168" text-anchor="middle" font-size="11" font-weight="bold" fill="#999" font-family="Noto Serif SC,serif">S</text>
+    <!-- W -->
+    <polygon points="102,120 122,113 122,127" fill="#999"/>
+    <text x="93" y="124" text-anchor="middle" font-size="11" font-weight="bold" fill="#999" font-family="Noto Serif SC,serif">W</text>
+    <!-- E -->
+    <polygon points="178,120 158,113 158,127" fill="#999"/>
+    <text x="187" y="124" text-anchor="middle" font-size="11" font-weight="bold" fill="#999" font-family="Noto Serif SC,serif">E</text>
+    <!-- 指针 -->
+    <line x1="140" y1="88" x2="140" y2="88" stroke="#C0392B" stroke-width="1.5"/>
+    <line x1="140" y1="88" x2="143" y2="120" stroke="#C0392B" stroke-width="1.5"/>
+    <line x1="140" y1="88" x2="137" y2="120" stroke="#C0392B" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== 左下角图例 ===== -->
+  <g transform="translate(30, 720)">
+    <rect x="0" y="0" width="400" height="150" fill="white" fill-opacity="0.9" stroke="#D4A017" stroke-width="1.5" rx="8"/>
+
+    <text x="15" y="22" font-size="14" font-weight="bold" fill="#333" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">图例 LEGEND</text>
+    <line x1="15" y1="28" x2="120" y2="28" stroke="#D4A017" stroke-width="1"/>
+
+    <!-- 打卡点图例 -->
+    <g transform="translate(15, 40)">
+      <path d="M 5 0 Q 5 -12 12 -12 Q 19 -12 19 0 L 12 10 Z" fill="#E53935"/>
+      <text x="28" y="0" font-size="11" fill="#555" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">游乐园（长隆欢乐世界）</text>
+    </g>
+    <g transform="translate(15, 62)">
+      <path d="M 5 0 Q 5 -12 12 -12 Q 19 -12 19 0 L 12 10 Z" fill="#FF8F00"/>
+      <text x="28" y="0" font-size="11" fill="#555" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">非遗表演（祖庙醒狮）</text>
+    </g>
+    <g transform="translate(15, 84)">
+      <path d="M 5 0 Q 5 -12 12 -12 Q 19 -12 19 0 L 12 10 Z" fill="#1E88E5"/>
+      <text x="28" y="0" font-size="11" fill="#555" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">文化古镇（沙湾/岭南天地）</text>
+    </g>
+    <g transform="translate(15, 106)">
+      <path d="M 5 0 Q 5 -12 12 -12 Q 19 -12 19 0 L 12 10 Z" fill="#43A047"/>
+      <text x="28" y="0" font-size="11" fill="#555" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">美食打卡（早茶/双皮奶）</text>
+    </g>
+
+    <!-- 交通图例 -->
+    <g transform="translate(220, 40)">
+      <line x1="0" y1="0" x2="30" y2="0" stroke="#F0D78C" stroke-width="4"/>
+      <text x="38" y="3" font-size="10" fill="#777" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">游览公路</text>
+    </g>
+    <g transform="translate(220, 62)">
+      <line x1="0" y1="0" x2="30" y2="0" stroke="#C4A882" stroke-width="4" stroke-dasharray="6,3"/>
+      <text x="38" y="3" font-size="10" fill="#777" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">广佛地铁</text>
+    </g>
+    <g transform="translate(220, 84)">
+      <line x1="0" y1="0" x2="30" y2="0" stroke="#7EC8E3" stroke-width="4"/>
+      <text x="38" y="3" font-size="10" fill="#777" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">珠江河道</text>
+    </g>
+
+    <!-- 方位规则 -->
+    <text x="220" y="120" font-size="10" fill="#999" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">方位：上北下南 左西右东</text>
+    <text x="220" y="138" font-size="10" fill="#999" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">比例尺：1:50,000（示意）</text>
+  </g>
+
+  <!-- ===== 底部建筑缩略图标栏 ===== -->
+  <g transform="translate(60, 810)">
+    <rect x="0" y="0" width="1080" height="55" fill="white" fill-opacity="0.85" stroke="#E8D5A8" stroke-width="1.5" rx="6"/>
+    <text x="540" y="14" text-anchor="middle" font-size="10" fill="#999" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">景点缩略图标 | Landmark Icons</text>
+
+    <!-- 长隆 -->
+    <circle cx="55" cy="38" r="8" fill="#FFE0B2" stroke="#FF8A65" stroke-width="1.5"/>
+    <text x="55" y="42" text-anchor="middle" font-size="6" fill="#E65100">过</text>
+    <text x="55" y="52" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">长隆</text>
+
+    <!-- 祖庙 -->
+    <rect x="115" y="30" width="14" height="14" fill="#FFE0B2" stroke="#FFB74D" stroke-width="1.5" rx="2"/>
+    <polygon points="122,24 115,32 129,32" fill="#FFCC80"/>
+    <text x="122" y="56" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">祖庙</text>
+
+    <!-- 沙湾 -->
+    <rect x="185" y="30" width="14" height="14" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1.5" rx="2"/>
+    <text x="192" y="56" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">沙湾</text>
+
+    <!-- 美食 -->
+    <circle cx="262" cy="38" r="8" fill="#E8F5E9" stroke="#81C784" stroke-width="1.5"/>
+    <text x="262" y="56" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">美食</text>
+
+    <!-- 岭南天地 -->
+    <rect x="320" y="30" width="14" height="14" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1.5" rx="2"/>
+    <text x="327" y="56" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">岭南天地</text>
+
+    <!-- 广州南站 -->
+    <rect x="395" y="30" width="18" height="14" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1.5" rx="3"/>
+    <text x="404" y="56" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">南站</text>
+
+    <!-- 陈家祠 -->
+    <rect x="470" y="30" width="14" height="14" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1.5" rx="2"/>
+    <text x="477" y="56" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">陈家祠</text>
+
+    <!-- 梁园 -->
+    <rect x="540" y="30" width="14" height="14" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1.5" rx="2"/>
+    <text x="547" y="56" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">梁园</text>
+
+    <!-- 地铁 -->
+    <line x1="610" y1="38" x2="640" y2="38" stroke="#C4A882" stroke-width="3" stroke-dasharray="5,3"/>
+    <text x="625" y="56" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">地铁</text>
+
+    <!-- 更多 -->
+    <rect x="690" y="30" width="14" height="14" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1.5" rx="2"/>
+    <text x="697" y="56" text-anchor="middle" font-size="8" fill="#666" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">更多</text>
+
+    <text x="760" y="46" font-size="8" fill="#ccc" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">···</text>
+  </g>
+
+  <!-- ===== 右下角年份标注 ===== -->
+  <text x="1150" y="890" text-anchor="end" font-size="14" fill="#C4A882" font-family="Noto Serif SC,serif" font-weight="bold">2026</text>
+
+  <!-- 珠江标签 -->
+  <text x="1080" y="345" font-size="12" fill="#5BA4CF" font-family="Noto Sans SC,Microsoft YaHei,sans-serif" font-style="italic">珠 江</text>
+
+  <!-- 广佛地铁标签 -->
+  <text x="420" y="462" font-size="10" fill="#8B7355" font-family="Noto Sans SC,Microsoft YaHei,sans-serif">广佛地铁线</text>
+</svg>
